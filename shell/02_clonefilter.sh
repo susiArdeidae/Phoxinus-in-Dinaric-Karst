@@ -11,7 +11,7 @@ WORK_DIR="your/working/dir/phox_ddrad"
 IN_DIR="$WORK_DIR/results/01_trimgalore"
 OUT_DIR="$WORK_DIR/results/02_clonefilter"
 
-for pool in {2..85}
+for pool in {1..94}
 do
     if [[ -f "$IN_DIR/Pool${pool}_1_val_1.fq.gz" && -f "$IN_DIR/Pool${pool}_2_val_2.fq.gz" ]]; then
         clone_filter "$IN_DIR/Pool${pool}_1_val_1.fq.gz" "$IN_DIR/Pool${pool}_2_val_2.fq.gz" \

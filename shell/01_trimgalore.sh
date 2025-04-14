@@ -15,7 +15,7 @@ OUT_DIR="$WORK_DIR/results/01_trimgalore"
 #Setup Trim Galore Output Directory
 mkdir -p $WORK_DIR/results/01_trimgalore
 
-for pool in {1..85}
+for pool in {1..94}
 do
     if [[ -f "$RAW_DIR/Pool${pool}_1.fastq.gz" && -f "$RAW_DIR/Pool${pool}_2.fastq.gz" ]]; then
         trim_galore --paired --quality 30 --length 40 --cores 10 -o "$OUT_DIR" "$RAW_DIR/Pool${pool}_1.fastq.gz" "$RAW_DIR/Pool${pool}_2.fastq.gz"

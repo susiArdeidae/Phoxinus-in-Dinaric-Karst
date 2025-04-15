@@ -3,8 +3,8 @@
 # Loop all individuals
 # Starting with demultiplexed individuals
 
+# Loop through all demultiplexed files
 for name in your/working/dir/phox_ddrad/results/03_demultiplex/*.rem.1.fq.gz
-
   do
 
     # Extract individual ID from the file path
@@ -33,15 +33,19 @@ for name in your/working/dir/phox_ddrad/results/03_demultiplex/*.rem.1.fq.gz
     module load NGSmapper/bwa-0.7.13 # For BWA alignment
     module load Tools/samtools-1.12 # For BAM conversion and sorting
 
+    # Set the output directory variable
+    OUT_DIR="your/working/dir/phox_ddrad/results/04_bwa_referenced_aligned"
+
     # Run BWA mem for alignment and pipe to samtools to convert and sort
-    bwa mem -t 20 your/working/dir/phox_ddrad/Phoxinus_draftgenome/fPhoPho.hap1.20220427.fa.gz \
+    bwa mem your/working/dir/phox_ddrad/Phoxinus_draftgenome/fPhoPho.hap1.20220427.fa.gz \
     ${dir}/${ID}.1.fq.gz \
     ${dir}/${ID}.2.fq.gz \
     | samtools view -bh \
-    | samtools sort > your/working/dir/phox_ddrad/results/04_bwa_referenced_aligned/${ID}.bam
+    | samtools sort > ${OUT_DIR}/${ID}.bam
     """ > your/working/dir/phox_ddrad/shell/04_bwa/Phox/QSUB_${ID}.sh
 
     # Submit the job to the cluster
     qsub your/working/dir/phox_ddrad/shell/04_bwa/Phox/QSUB_${ID}.sh
 
 done
+

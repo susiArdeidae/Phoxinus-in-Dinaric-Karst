@@ -1,22 +1,22 @@
 # Factors beyond karstification have shaped the population structure of a surface-dwelling minnow (Phoxinus lumaireul) able to disperse underground
 
-#Bash Scripts
 
-Scripts dynamically process multiple pools and populations.
+This repositories includes the following Bash Scripts:
 
-01. Trim Galore (01_trimgalore_qsub.sh)
+
+01. Trim Galore (01_trimgalore.sh)
 
 Trims sequencing data with Trim Galore.
 
-02. Clone Filter (02_clonefilter_qsub.sh)
+02. Clone Filter (02_clonefilter.sh)
 
 Removes PCR duplicates with Stacks clone_filter.
 
-03. Demultiplex (03_demultiplex_qsub.sh)
+03. Demultiplex (03_demultiplex.sh)
 
 Demultiplexes reads based on barcodes.
 
-04. Reference Alignment (04_bwa_alignment.sh)
+04. Reference Alignment (04_bwa.sh)
 
 Aligns demultiplexed individuals to a reference genome with BWA-MEM and sorts output with SAMtools.
 

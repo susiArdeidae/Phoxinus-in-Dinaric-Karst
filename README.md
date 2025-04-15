@@ -16,7 +16,7 @@ Removes PCR duplicates with Stacks clone_filter.
 
 Demultiplexes reads based on barcodes.
 
-04. Reference Alignment (04_bwa.sh)
+04. Reference Alignment (04_bwa_mapping.sh)
 
 Aligns demultiplexed individuals to a reference genome with BWA-MEM and sorts output with SAMtools.
 

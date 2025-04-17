@@ -28,4 +28,4 @@ Builds loci from paired-end alignment data using gstacks.
 
 Runs STACKS populations with varying minor allele frequency (MAF) filtering.
 
-Corresponding files and scripts can be found here: https://doi.org/10.57756/58udvj 
+Files and scripts for population genetic analyses can be found here: https://doi.org/10.57756/58udvj 

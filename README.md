@@ -27,3 +27,5 @@ Builds loci from paired-end alignment data using gstacks.
 06. populations Analysis (06_populations.sh)
 
 Runs STACKS populations with varying minor allele frequency (MAF) filtering.
+
+Corresponding files and scripts can be found here: https://doi.org/10.57756/58udvj 

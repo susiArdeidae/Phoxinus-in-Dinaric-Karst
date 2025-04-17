@@ -11,6 +11,7 @@ This project uses ddRAD sequencing data digested with MsPI and EcoRI, and size-s
 The processing pipeline is based on widely used tools including Trim Galore, STACKS, BWA, and SAMtools.
 
 📁 Available Bash Scripts
+
 🔹 01_trimgalore.sh
 Purpose: Trims sequencing reads.
 Tool: Trim Galore

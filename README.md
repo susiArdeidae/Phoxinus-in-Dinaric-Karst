@@ -1,7 +1,7 @@
 # Factors beyond karstification have shaped the population structure of a surface-dwelling minnow (Phoxinus lumaireul) able to disperse underground
 
 
-This repositories includes the following Bash Scripts:
+This repositories includes the following Bash Scripts for ddRAD data processing of P. lumaireul (restriction enzymes: MsPI and EcoRI; size selection: 250-450bp):
 
 
 01. Trim Galore (01_trimgalore.sh)
